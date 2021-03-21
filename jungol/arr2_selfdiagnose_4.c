@@ -9,11 +9,11 @@ int main()
                     };
     for (i = 0; i < 3; i++)
     {  
-       printf("%2d",arr[i][0]);
-       printf("%2d",arr[i][1]);
-       printf("%2d",arr[i][2]);
-       printf("%2d",arr[i][3]);
-       printf("%2d",arr[i][4]); 
+       printf("%3d",arr[i][0]);
+       printf("%3d",arr[i][1]);
+       printf("%3d",arr[i][2]);
+       printf("%3d",arr[i][3]);
+       printf("%3d\n",arr[i][4]); 
     }
     return 0;
 }
