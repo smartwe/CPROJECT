@@ -18,7 +18,7 @@ int main()
         if (total[i]/4 >= 80)
         {
             printf("pass\n");
-            pass++
+            pass++;
         }
         else if(total[i]/4 < 80)
         {
