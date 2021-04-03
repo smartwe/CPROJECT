@@ -4,7 +4,8 @@ int main()
 {
     int arr[100];
     int i, score;
-    while (1)
+
+    for (i = 0; i < 100; i++)
     {
         scanf("%d",&score);
         arr[score]++;
