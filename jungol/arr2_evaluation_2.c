@@ -2,5 +2,7 @@
 
 int main()
 {
+    int arr[];
+    int i, score;
     
 }
