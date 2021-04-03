@@ -2,7 +2,7 @@
 
 int main()
 {
-    int arr[];
+    int arr[100];
     int i, score;
     
 }
