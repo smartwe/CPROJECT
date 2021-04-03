@@ -7,6 +7,6 @@ int main()
     while (1)
     {
         scanf("%d",&score);
-        
+        arr[score]++;
     }
 }
