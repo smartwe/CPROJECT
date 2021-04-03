@@ -6,5 +6,7 @@ int main()
     int arr[10]
     scanf("%d",&num1);
     scanf("%d",&num2);
-
+    arr[0] = num1;
+    arr[1] = num2;
+    
 }
