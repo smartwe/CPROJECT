@@ -11,13 +11,13 @@ int main()
     for (i = 0; i < 100; i++)
     {
         scanf("%d",&score);
-        arr[score/10]++;
         if (score == 0)
         {
             break;
         }
-    }
+        arr[score/10]++;
 
+    }
     for (i = 10; i >= 0; i--)
     {
         if (arr[i] != 0)
