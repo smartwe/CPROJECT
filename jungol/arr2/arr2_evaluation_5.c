@@ -26,4 +26,5 @@ int main()
     {
         printf("%dclass : %d\n",i + 1,total[i]);
     }
+    return 0;
 }

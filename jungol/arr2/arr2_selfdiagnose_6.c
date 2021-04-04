@@ -26,4 +26,5 @@ int main()
         }   
     }
     printf("Successful : %d", pass);
+    return 0;
 }

@@ -25,4 +25,5 @@ int main()
             printf("%d : %d person\n",i * 10 ,arr[i]);
         }
     }
+    return 0;
 }
