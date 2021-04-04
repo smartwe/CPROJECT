@@ -24,6 +24,6 @@ int main()
     }
     for (i = 0; i < 4; i++)
     {
-        printf("%d\n",total[i]);
+        printf("%dclass : %d\n",i + 1,total[i]);
     }
 }
