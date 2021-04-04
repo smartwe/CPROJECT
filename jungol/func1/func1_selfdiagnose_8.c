@@ -11,12 +11,13 @@ int main()
 {
     int a , b;
     scanf("%d %d", &a, &b);
-    if(a > b){
+    if(a > b)
+    {
         int t = a;
         a = b;
         b = t;
     }
-    for(int i=a;i<=b;i++){
+    for(int i = a;i <= b;i++){
         ggdan(i);
         puts("");
     }
