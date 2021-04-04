@@ -15,7 +15,6 @@ int main()
     scanf("%d",&num);
     gaus(num);
 }
-
 /*----------------------------------------------------------------
 #include <stdio.h>
 int gaus(int num) { return -~num*num>>1; }
