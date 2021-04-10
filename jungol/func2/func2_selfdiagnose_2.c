@@ -1,5 +1,5 @@
 #include <stdio.h>
-int cnt(int a[])
-{
-    printf("a")
+int date(int a. int b)
+{   
+    
 }
