@@ -2,4 +2,13 @@
 #include <stdlib.h>
 #include <math.h>
 
-int finder(double x, double y)
+int main()
+{
+    int a, b;
+    scanf("%d",a);
+    scanf("%d",b);
+    int c, d;
+    scanf("%d",c);
+    scanf("%d",d);
+    
+}
