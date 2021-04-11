@@ -21,4 +21,6 @@ int main()
             }
     }
     printf("%.0lf %.0lf %.0lf", ceil(arr[2]), floor(arr[0]), round(arr[1]));
+
+    return 0;
 }
