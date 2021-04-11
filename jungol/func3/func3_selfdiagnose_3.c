@@ -1,16 +1,15 @@
 #include <stdio.h>
-void print(int n)
+int print(int n)
 {
     if (n < 1)
     {
-        return;
+        return 0;
     }
-    printf("%d ", n);
-    print(n - 1);
+    return n + print(n - 1);
 }
 int main()
 {
     int n;
     scanf("%d", &n);
-    print(n);
+    printf("%d", print(n));
 }
