@@ -13,4 +13,7 @@ int main()
     {
         sum += abs(arr[i]);
     }
+    printf("%d",sum);
+    
+    return 0;
 }
