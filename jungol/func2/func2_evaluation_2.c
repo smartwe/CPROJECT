@@ -7,7 +7,7 @@ int main()
     scanf("%lf %lf",&num1,&num2);
     if (num1 > num2)
     {
-           printf("%d", floor(sqrt(num1))- ceil(sqrt(num2)) + 1);
+           printf("%.0lf", floor(sqrt(num1))- ceil(sqrt(num2)) + 1);
     }
     else 
     {
