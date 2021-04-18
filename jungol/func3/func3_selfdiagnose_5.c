@@ -1,38 +1,29 @@
-#include <stdio.h>
-int N, arr[101];
+#include<stdio.h>
 
-void output()
-{
-	int i;
-	for (i = 1; i <= N; i++) 
-    {
+int arr[11], N;
+
+void output() {
+	for(int i=1;i<=N;i++){
 		printf("%d ", arr[i]);
 	}
-
 	printf("\n");
 }
 
-void dice(int level)
-{
-	int i;
-
-	if (level > N) {
+void dice(int idx) {
+	if(idx > N){ // idx == N + 1
 		output();
-		return 0;
+		return;
 	}
 
-	for (i = arr[level - 1]; i <= 6; i++)  
-    {
-		arr[level] = i;
- 		dice(level + 1);
-    }
+	for(int i=arr[idx - 1]; i<=6;i++){
+		arr[idx] = i;
+		dice(idx + 1);
+	}
 }
 
-int main()
-{
-	scanf("%d", &N);
+int main(){
+	scanf("%d",&N);
 	arr[0] = 1;
-
+	
 	dice(1);
-	return 0;
 }
