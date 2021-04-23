@@ -2,6 +2,10 @@
 
 int func(int total)
 {
+   if (total < 10)
+   {
+       return total;
+   }
    if (total % 10 == 0)
    {
        return func(total / 10) * 1;
