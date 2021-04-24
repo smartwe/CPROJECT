@@ -10,16 +10,13 @@ void func(int n)
         return;
     }
     
-    else if (n % 2 == 0)
+    if (n % 2 == 0)
     {
         i++;
         func(n / 2);
     }
-    else
-    {
-        i++;
-        func(n / 3);
-    }
+    i++;
+    func(n / 3);
 }
 int main()
 {
