@@ -12,8 +12,8 @@ int func(int total)
 int main()
 {
     int n, m ,o;
-    scanf("%d %d %d", n, m, o);
-    func(n * m * o);
+    scanf("%d %d %d", &n, &m, &o);
+    printf("%d", func(n * m * o));
 
     return 0;
 }
