@@ -8,7 +8,7 @@ int main()
     scanf("%s", str);
     len = strlen(str);
     scanf("%d", &n);
-    for (int i = len - 1; i > len - n - 1; i--)
+    for (int i = len - 1; i >= 0 && i > len - n - 1; i--)
     {
         printf("%c", str[i]);
     }
