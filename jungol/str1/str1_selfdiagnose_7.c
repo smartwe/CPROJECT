@@ -5,8 +5,15 @@
 int main()
 {
     char str[101];
-    scanf("%s", str);
-    printf("%s", toupper(str));
+    scanf("%s", str);  
+    int n = strlen(str);
+    for (int i = 0; i < n; i++)
+    {
+        if (isalpha(str[i]))
+        {
+            printf("%c", toupper(str[i]));
+        }
+    }
 
     return 0;
 }
