@@ -1,11 +1,12 @@
 #include <stdio.h>
-int main()
-{
-    int num1, num2, num3;
-    scanf("%d %d %d", &num1, &num2, &num3);
-    printf("%d\n", (num1 + num2) % num3);
-    printf("%d\n", ((num1 % num3) + (num2 % num3)) % num3);
-    printf("%d\n", (num1 * num2) % num3);
-    printf("%d\n", ((num1 % num3) * (num2 % num3)) % num3);
-    return 0;
+int main() {
+    int i, count, num;
+    int inArr[10000];
+    scanf("%d %d", &count, &num);
+    
+    for (i = 0; i < count; i++){
+        scanf("%d", &inArr[i]);
+        if(inArr[i] < num)
+            printf("%d ", inArr[i]);
+    }
 }
