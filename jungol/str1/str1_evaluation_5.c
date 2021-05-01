@@ -3,5 +3,6 @@
 
 int main()
 {
-    hi
+    char str[100];
+    char str2[100];
 }
