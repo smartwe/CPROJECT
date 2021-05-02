@@ -5,12 +5,12 @@ int main()
 
     for (int i = 0; i < 5; i++)
     {
-        scanf(" %s", str);
+        scanf("%s", str[i]);
     }
 
-    for (int i = 5; i > 0; i--)
+    for (int i = 4; i >= 0; i--)
     {
-        printf("%s\n", str);
+        printf("%s\n", str[i]);
     }
 
     return 0;
