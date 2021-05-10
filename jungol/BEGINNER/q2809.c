@@ -1,19 +1,43 @@
-#include <stdio.h>
-#include <math.h>
+# include <stdio.h>
+# include <math.h>
 int main()
 {
-    int n; 
-    double ren;
-    scanf("%d", &n);
-    ren = sqrt(n);
-    
-    for (int i = 0; i < ren; i++)
-    {
-        if (n % i == 0)
-        {
-            printf("%d ", i);
-        }
-    }
-
-    return 0;
+	int i,j,n,tmp;
+	int sq;
+	int arr[10000], count=0;
+	
+	scanf("%d", &n);
+	sq = (int)sqrt(n);
+	
+	for (i = 1; i <= sq; i++)
+	{
+		if(n % i == 0)
+		{
+			arr[count++] = i;
+			if(n/i != i)
+			{
+				arr[count++] = n / i;
+			}
+		}
+	}
+	
+	for (i = 0; i < count; i++)
+	{
+		for(j = 0; j < count; j++)
+		{
+			if(arr[i] < arr[j])
+			{
+				tmp = arr[j];
+				arr[j] = arr[i];
+				arr[i] = tmp;
+			}
+		}
+	}
+	
+	for(i = 0; i < count; i++)
+	{
+		printf("%d ",arr[i]);
+	}
+	
+	return 0;
 }
