@@ -7,7 +7,7 @@ int f(int p,int q){
 
 int main()
 {
-    int arr[1001];
+    int arr[10000000000001];
     int n;
     scanf("%d", &n);
     for (int i = 0; i < n; i++)
