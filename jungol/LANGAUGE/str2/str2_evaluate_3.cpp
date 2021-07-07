@@ -9,7 +9,7 @@ int main()
     while (1)
     {
         scanf("%s", arr[i]);
-        if (arr[i][0] == '0') 
+        if (arr[i] == "0\n") 
         {
             break;
         }
